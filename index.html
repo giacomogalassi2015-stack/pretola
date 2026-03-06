@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Serena — Toscana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────────── -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        Villa Serena
+        <span>Toscana, Italia</span>
+      </a>
+      <nav>
+        <a href="#esperienza">L'Esperienza</a>
+        <a href="#spazi">Gli Spazi</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <a href="#prenota" class="btn btn-accent header-cta">Prenota Ora</a>
+      <button class="hamburger" id="hamburger" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#esperienza" class="mobile-link">L'Esperienza</a>
+    <a href="#spazi" class="mobile-link">Gli Spazi</a>
+    <a href="#contatti" class="mobile-link">Contatti</a>
+    <a href="#prenota" class="btn btn-accent">Prenota Ora</a>
+  </div>
+
+  <!-- ── HERO / CAROUSEL ─────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="carousel" id="carousel" aria-label="Galleria immagini villa">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&auto=format&fit=crop&q=80"
+               alt="Grande piscina privata della villa con montagne toscane sullo sfondo e cielo azzurro primaverile"
+               loading="eager" />
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1600&auto=format&fit=crop&q=80"
+               alt="Villa in pietra toscana con fiori gialli primaverili in primo piano e verde lussureggiante intorno"
+               loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&auto=format&fit=crop&q=80"
+               alt="Vista panoramica sui monti toscani dalla terrazza privata della villa al tramonto"
+               loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1600&auto=format&fit=crop&q=80"
+               alt="Ampia terrazza esterna con tavolo da pranzo per gruppi, vista sulle colline verdi della Toscana in primavera"
+               loading="lazy" />
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <span class="hero-eyebrow">Primavera in Toscana</span>
+        <h1 class="hero-title">Il tuo rifugio tra<br/><em>natura e silenzio</em></h1>
+        <p class="hero-sub">Una villa esclusiva per famiglie e gruppi, immersa tra le colline, con piscina privata e vista mozzafiato sui monti.</p>
+        <div class="hero-cta">
+          <a href="#prenota" class="btn btn-accent">Prenota Ora</a>
+          <a href="#spazi" class="btn-outline-white">Scopri la Villa</a>
+        </div>
+      </div>
+
+      <button class="carousel-btn carousel-prev" id="prevBtn" aria-label="Immagine precedente">&#8592;</button>
+      <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Immagine successiva">&#8594;</button>
+      <div class="carousel-dots" id="carouselDots" role="tablist"></div>
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-hint-line"></div>
+        <span>Scorri</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ──────────────────────────────────── -->
+  <section class="experience" id="esperienza">
+    <div class="container">
+      <div class="experience-inner">
+        <div class="experience-text reveal">
+          <span class="section-label">L'Esperienza</span>
+          <h2 class="section-title">Dove la primavera<br/>diventa casa</h2>
+          <p>Villa Serena nasce dal desiderio di offrire qualcosa di raro: il tempo. Spazio per rallentare, respirare profondo, ritrovare il ritmo naturale delle cose. Circondata da ulivi e cipressi, con il canto degli uccelli al mattino e l'odore di erba fresca nell'aria.</p>
+          <p>Pensata per famiglie numerose e gruppi di amici, ogni ambiente è stato concepito perché ci sia sempre abbastanza posto — per cucinare insieme, per giocare, per sedersi in silenzio a guardare le montagne.</p>
+          <a href="#prenota" class="btn btn-accent">Verifica disponibilità</a>
+        </div>
+        <div class="experience-visual reveal reveal-delay-2">
+          <img class="exp-img-main"
+               src="https://images.unsplash.com/photo-1598928636135-d146006ff4be?w=800&auto=format&fit=crop&q=80"
+               alt="Angolo esterno della villa con tavolo in pietra e vista sulla vallata toscana in fiore" />
+          <img class="exp-img-badge"
+               src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?w=400&auto=format&fit=crop&q=80"
+               alt="Dettaglio di fiori primaverili nel giardino della villa" />
+          <div class="exp-quote">
+            <p>"Il posto dove ho capito cosa vuol dire davvero rilassarsi."</p>
+            <span>— Famiglia Colombo, Milano</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">✦ ✦ ✦</div>
+
+  <!-- ── SPACES ───────────────────────────────────────── -->
+  <section class="spaces" id="spazi">
+    <div class="container">
+      <div class="spaces-header reveal">
+        <span class="section-label">I Nostri Spazi</span>
+        <h2 class="section-title">Tutto lo spazio<br/>che meritate</h2>
+        <p>Tre ambienti d'eccezione, pensati per vivere ogni momento della giornata in piena libertà.</p>
+      </div>
+      <div class="spaces-grid">
+        <article class="space-card reveal reveal-delay-1">
+          <div style="overflow:hidden;">
+            <img class="space-card-img"
+                 src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&auto=format&fit=crop&q=80"
+                 alt="Piscina privata panoramica con solarium e lettini al sole, circondata da piante mediterranee in fiore" />
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-number">01</div>
+            <h3 class="space-card-title">Piscina &amp; Solarium</h3>
+            <p class="space-card-text">Un'ampia piscina da 12×6 m con solarium lastricato in pietra locale, lettini e ombrelloni. Il posto perfetto per trascorrere lunghi pomeriggi primaverili tra tuffi e relax.</p>
+            <a class="space-card-link" href="#prenota">Scopri →</a>
+          </div>
+        </article>
+        <article class="space-card reveal reveal-delay-2">
+          <div style="overflow:hidden;">
+            <img class="space-card-img"
+                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop&q=80"
+                 alt="Vista panoramica sui monti dell'Appennino toscano dalla terrazza della villa, con nebbia mattutina" />
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-number">02</div>
+            <h3 class="space-card-title">Vista sui Monti</h3>
+            <p class="space-card-text">La terrazza panoramica guarda verso le cime dell'Appennino: un orizzonte che cambia colore dall'alba al tramonto. Ogni mattina, un quadro diverso per svegliarsi.</p>
+            <a class="space-card-link" href="#prenota">Scopri →</a>
+          </div>
+        </article>
+        <article class="space-card reveal reveal-delay-3">
+          <div style="overflow:hidden;">
+            <img class="space-card-img"
+                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop&q=80"
+                 alt="Grande tavolo da pranzo esterno allestito per un gruppo di persone, con candele e fiori primaverili" />
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-number">03</div>
+            <h3 class="space-card-title">Spazi per Gruppi</h3>
+            <p class="space-card-text">Fino a 16 ospiti accolti senza affollamento: 7 camere, 2 soggiorni, cucina professionale, sala giochi. Spazio per tutti — il lusso vero è avere abbondanza.</p>
+            <a class="space-card-link" href="#prenota">Scopri →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ────────────────────────────────────────── -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal"><div class="stat-num">16</div><div class="stat-label">Ospiti max</div></div>
+        <div class="stat-item reveal reveal-delay-1"><div class="stat-num">7</div><div class="stat-label">Camere da letto</div></div>
+        <div class="stat-item reveal reveal-delay-2"><div class="stat-num">2ha</div><div class="stat-label">Di terreno privato</div></div>
+        <div class="stat-item reveal reveal-delay-3"><div class="stat-num">850m</div><div class="stat-label">Quota sul mare</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ──────────────────────────────────── -->
+  <section class="cta-banner" id="prenota">
+    <div class="container">
+      <span class="section-label reveal">Prenota il tuo soggiorno</span>
+      <h2 class="section-title reveal">Primavera 2025:<br/>pochi posti disponibili</h2>
+      <p class="reveal">Le date primaverili sono le più richieste. Scrivi ora per verificare la disponibilità e ricevere il preventivo personalizzato.</p>
+      <a href="mailto:info@villaserena.it" class="btn btn-accent reveal">Richiedi Disponibilità</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────── -->
+  <footer id="contatti">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Villa Serena<span>Toscana, Italia</span></div>
+          <p>Una dimora esclusiva immersa nel cuore della Toscana, per chi cerca autenticità, silenzio e bellezza.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="#esperienza">L'Esperienza</a></li>
+            <li><a href="#spazi">Gli Spazi</a></li>
+            <li><a href="#prenota">Prenota</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <address>
+            Via delle Colline, 12<br/>
+            53100 Siena (SI), Toscana<br/>
+            <a href="tel:+390577000000">+39 0577 000 000</a><br/>
+            <a href="mailto:info@villaserena.it">info@villaserena.it</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Villa Serena — Tutti i diritti riservati</span>
+        <span>Made with care in Tuscany 🌿</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
